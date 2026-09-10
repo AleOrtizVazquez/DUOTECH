@@ -25,19 +25,8 @@ Configura usuario/contraseña en:
 ```bash
 mvnw.cmd spring-boot:run
 ```
-
 o:
-
 ```bash
 mvn spring-boot:run
 ```
-
-API:
-- GET /api/catalog
-- GET /api/catalog/{id}
-- GET /api/announcements
-- POST /api/auth/login
-- POST /api/auth/register
-- POST /api/auth/recover
-
-token, roles y autorización real.
+ y autorización real.
