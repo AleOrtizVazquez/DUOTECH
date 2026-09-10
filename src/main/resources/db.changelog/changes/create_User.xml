@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.31.xsd">
+
+    <changeSet id="001-create-user" author="admin">
+
+        <createTable tableName="user">
+
+            <column name="iduser" type="INTEGER" autoIncrement="true">
+                <constraints
+                        primaryKey="true"
+                        primaryKeyName="pk_user"
+                        nullable="false"/>
+            </column>
+
+            <column name="idcontactmeans" type="INTEGER"/>
+
+            <column name="idaccount" type="INTEGER"/>
+
+            <column name="fullname" type="VARCHAR(100)"/>
+
+            <column name="startdate" type="TIMESTAMP"/>
+
+            <column name="enddate" type="TIMESTAMP"/>
+
+            <column name="birthdate" type="DATE"/>
+
+            <column name="mainemail" type="VARCHAR(500)"/>
+
+            <column name="additionalemail" type="VARCHAR(500)"/>
+
+            <column name="mainmobilephone" type="BIGINT"/>
+
+            <column name="additionalphone" type="BIGINT"/>
+
+            <column name="privacynoticeaccepptance" type="BOOLEAN"/>
+
+            <column name="acceptancetermsconditions" type="BOOLEAN"/>
+
+            <column name="password" type="VARCHAR(255)"/>
+
+            <column
+                    name="creationdate"
+                    type="TIMESTAMP"
+                    defaultValueDate="CURRENT_TIMESTAMP"/>
+
+            <column
+                    name="active"
+                    type="BOOLEAN"
+                    defaultValueBoolean="true"/>
+
+        </createTable>
+
+    </changeSet>
+
+</databaseChangeLog>

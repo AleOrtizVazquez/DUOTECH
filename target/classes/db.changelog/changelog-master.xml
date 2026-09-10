@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <!-- CREATE TABLES-->
+
+    <include file="classpath:db.changelog/changes/create_User.xml"/>
+    <include file="classpath:db.changelog/changes/create_table_account.xml"/>
+
+
+    <changeSet id="1" author="admin"><createSequence sequenceName="hibernate_sequence"/></changeSet>
+</databaseChangeLog>
