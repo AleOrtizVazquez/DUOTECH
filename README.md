@@ -40,5 +40,4 @@ API:
 - POST /api/auth/register
 - POST /api/auth/recover
 
-NOTA:
-La autenticación está preparada como punto de partida/demo. Para producción se debe implementar entidad de usuario, BCrypt, JWT/refresh token, roles y autorización real.
+token, roles y autorización real.
